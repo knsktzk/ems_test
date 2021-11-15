@@ -14,7 +14,7 @@ aJobIDList = []
 for i in xrange(0,5):
 	
 	VALUE_OF_S = i * 1000
-	aParameterDict = { 'MODEL_FILE': MODEL_FILE, 'VALUE_OF_S': VALUE_OF_S,  }
+	aParameterDict = { 'MODEL_FILE': MODEL_FILE, 'VALUE_OF_S': VALUE_OF_S  }
 
 	#registerEcellSession( ESS file, parameters, files that ESS uses )
 	aJobID = registerEcellSession( ESS_FILE, aParameterDict, [ MODEL_FILE, ])
